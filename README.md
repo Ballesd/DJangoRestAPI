@@ -14,33 +14,33 @@ Installamos corsheaders
 
 Añadimos corsheaders al installed APPS
 
-INSTALLED_APPS = [ 
-    
-    'django.contrib.admin', 
-    ... 
-    'corsheaders',
-    ... 
-]
+    INSTALLED_APPS = [ 
+
+        'django.contrib.admin', 
+        ... 
+        'corsheaders',
+        ... 
+    ]
 
 
 Añadimos corsheaders al middleware
 
 
-MIDDLEWARE = [
+    MIDDLEWARE = [
 
-    ...
-    'corsheaders.middleware.CorsMiddleware',
-    ...
+        ...
+        'corsheaders.middleware.CorsMiddleware',
+        ...
 
-]
+    ]
 
 
 Añadimos las rutas que tendran acceso a la API, Quitar el your website en caso de no ser usada 
 
-CORS_ALLOWED_ORIGINS = [
+    CORS_ALLOWED_ORIGINS = [
 
-    'http://127.0.0.1:3000',
-    'http://localhost:3030',
-    'yoursite.com'
+        'http://127.0.0.1:3000',
+        'http://localhost:3030',
+        'yoursite.com'
 
-]
+    ]
