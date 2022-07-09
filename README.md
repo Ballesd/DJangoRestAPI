@@ -7,7 +7,7 @@ Creación de Rest API con Django, transforma los datos de una base de datos(SQLL
 Installamos corsheaders
 
 
-python -m pip install django-cors-headers
+    python -m pip install django-cors-headers
 
 ### En settings configuramos los accesos
 
@@ -35,7 +35,7 @@ MIDDLEWARE = [
 ]
 
 
-Añadimos las rutas que tendran acceso a la API
+Añadimos las rutas que tendran acceso a la API, Quitar el your website en caso de no ser usada 
 
 CORS_ALLOWED_ORIGINS = [
 
